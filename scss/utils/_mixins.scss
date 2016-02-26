@@ -4,3 +4,7 @@
   display: table;
   clear: both;
 }
+
+@mixin transparency($r, $g, $b, $opacity) {
+  background-color: rgba($r, $g, $b, $opacity);
+}
