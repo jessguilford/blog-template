@@ -1,3 +1,11 @@
+// Featured post
+
+.featured-post {
+  border: 1px solid grey;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 // Posts Gallery
 
 .gallery-item {
@@ -5,9 +13,12 @@
   .item-label {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    top: 0;
     @include transparency(255, 255, 255, 0.7);
     padding: 20px;
+    .long-text {
+      display: none;
+    }
   }
   @media screen and (min-width: $large-breakpoint) {
     &:hover {
