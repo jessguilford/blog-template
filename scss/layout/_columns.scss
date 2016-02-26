@@ -1,0 +1,16 @@
+// Wireframing
+*:not(body):not(html) {
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+// Body columns
+.blog-main {
+  width: 70%;
+  float: left;
+}
+
+.sidebar {
+  width: 30%;
+  float: right;
+}

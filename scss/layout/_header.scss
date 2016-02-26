@@ -1,0 +1,17 @@
+
+.header {
+  ul {
+    width: 30%;
+    margin: 0 auto;
+    padding: 0;
+    li {
+      float: left;
+      list-style: none;
+      margin: 10px 1%;
+      width: 31.33%;
+    }
+    &:after {
+      @include clearfix;
+    }
+  }
+}
