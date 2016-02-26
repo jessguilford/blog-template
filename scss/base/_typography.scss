@@ -41,6 +41,7 @@ h3 {
 
 h4 {
   font-size: 1.1em;
+  color: $deep-pink;
 }
 
 a {
@@ -65,4 +66,9 @@ a {
   border: 1px solid black;
   padding: 5px;
   margin-left: 10px;
+}
+
+.month {
+  color: $deep-pink;
+  margin: 3px 0;
 }

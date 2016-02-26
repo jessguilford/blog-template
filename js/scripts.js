@@ -4,6 +4,6 @@ $(document).ready(function() {
     $(".month-posts").hide();
   });
   $(".month").click(function(event) {
-    $(this).next().slideToggle();
+    $(this).next(".month-posts").slideToggle();
   });
 });

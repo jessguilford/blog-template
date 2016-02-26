@@ -35,7 +35,8 @@ h3 {
   font-size: 1.2em; }
 
 h4 {
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  color: #fe6357; }
 
 a {
   color: #fe6357;
@@ -55,6 +56,10 @@ a {
   border: 1px solid black;
   padding: 5px;
   margin-left: 10px; }
+
+.month {
+  color: #fe6357;
+  margin: 3px 0; }
 
 *:not(body):not(html) {
   box-sizing: border-box; }
