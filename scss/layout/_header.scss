@@ -1,5 +1,11 @@
 
 .header {
+  background-color: $off-black;
+  .header-image {
+    img {
+      width: 100%;
+    }
+  }
   ul {
     width: 100%;
     margin: 0 auto;
@@ -10,6 +16,7 @@
       list-style: none;
       margin: 10px 1%;
       width: 31.33%;
+      background-color: $white;
     }
     @media screen and (min-width: $medium-breakpoint) {
       width: 100%;

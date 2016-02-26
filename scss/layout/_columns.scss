@@ -23,8 +23,32 @@
 }
 
 .sidebar {
+  .profile-pic {
+    img {
+      width: 100%;
+    }
+  }
   @media screen and (min-width: $medium-breakpoint) {
     width: 30%;
     float: right;
+  }
+}
+
+// Post Gallery
+.posts-gallery {
+  .gallery-col {
+    height: 500px;
+    .gallery-item {
+      height: 150px;
+      margin: $item-margin 0;
+    }
+    @media screen and (min-width: $medium-breakpoint) {
+      width: 48%;
+      margin: 1%;
+      float: left;
+    }
+  }
+  &::after {
+    @include clearfix;
   }
 }
