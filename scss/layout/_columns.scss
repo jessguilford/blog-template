@@ -5,12 +5,26 @@
 }
 
 // Body columns
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  background-color: #eee;
+  &::after {
+    @include clearfix;
+  }
+}
+
 .blog-main {
-  width: 70%;
-  float: left;
+  @media screen and (min-width: $medium-breakpoint) {
+    width: 70%;
+    float: left;
+  }
 }
 
 .sidebar {
-  width: 30%;
-  float: right;
+  @media screen and (min-width: $medium-breakpoint) {
+    width: 30%;
+    float: right;
+  }
 }
