@@ -1,0 +1,20 @@
+.sidebar {
+  h2 {
+    margin-bottom: 20px;
+  }
+  .profile-pic {
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  @media screen and (min-width: $medium-breakpoint) {
+    width: 25%;
+    float: right;
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
