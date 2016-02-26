@@ -6,7 +6,7 @@
 
 // Body columns
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1350px;
   margin: 0 auto;
   background-color: #eee;
@@ -17,7 +17,8 @@
 
 .blog-main {
   @media screen and (min-width: $medium-breakpoint) {
-    width: 70%;
+    width: 65%;
+    margin: 0 5% 0 0;
     float: left;
   }
 }
@@ -34,13 +35,21 @@
   }
 }
 
+// Featured post
+.featured-post {
+  img {
+    width: 100%;
+  }
+}
+
 // Post Gallery
 .posts-gallery {
   .gallery-col {
-    height: 500px;
     .gallery-item {
-      height: 150px;
       margin: $item-margin 0;
+      img {
+        width: 100%;
+      }
     }
     @media screen and (min-width: $medium-breakpoint) {
       width: 48%;
