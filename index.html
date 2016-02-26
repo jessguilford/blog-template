@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width">
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <title>Uncanny Observation - A Blog Template</title>
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="header">
@@ -15,13 +17,15 @@
         </ul>
       </div>
       <div class="header-image">
-        <img src="images/header.png" alt="An Artsy Tech Blog Template">
+        <a href="index.html"><img src="images/header.png" alt="An Artsy Tech Blog Template"></a>
       </div>
     </div>
     <div class="container">
       <div class="blog-main">
         <div class="featured-post">
-          <h1>Raspberry Pi/Arduino Meetup This Weekend</h1>
+          <a href="post.html">
+            <h1>Raspberry Pi/Arduino Meetup This Weekend</h1>
+          </a>
           <h3 class="date">2.26.2015</h3>
           <h3 class="post-category">Posted in: Announcements</h3>
           <img src="images/meeting.jpg" alt="featured blog post image">
@@ -70,13 +74,38 @@
           <img src="images/uncanny-profile.jpg" alt="Your picture here">
         </div>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="categories">
+          <h3>Categories</h3>
+        </div>
         <div class="archive">
-          <div class="categories">
-            <h3>Categories</h3>
-          </div>
           <h3>Archive</h3>
-          <h4>2016</h4>
-          <ul>
+          <h4 class="year" id="2016">2016</h4>
+          <ul class="months" id="months-2016">
+            <li class="month">Jan</li>
+              <ul class="month-posts">
+                <li>My latest collaboration</li>
+                <li>An inside look at Bethesda's new game engine</li>
+                <li>New post</li>
+              </ul>
+            <li class="month">Feb</li>
+              <ul class="month-posts">
+                <li>Raspberry Pi/Arduino Meetup this weekend</li>
+                <li>New post</li>
+                <li>New post</li>
+              </ul>
+            <li>Mar</li>
+            <li>Apr</li>
+            <li>May</li>
+            <li>Jun</li>
+            <li>Jul</li>
+            <li>Aug</li>
+            <li>Sept</li>
+            <li>Oct</li>
+            <li>Nov</li>
+            <li>Dec</li>
+          </ul>
+          <h4 class="year" id="2015">2015</h4>
+          <ul class="months" id="months-2015">
             <li>Jan</li>
             <li>Feb</li>
             <li>Mar</li>
