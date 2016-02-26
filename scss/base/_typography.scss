@@ -18,12 +18,13 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6, footer {
+h1, h2, h3, h4, h5, h6, footer, .older {
   font-family: 'lane_-_narrowregular';
 }
 
 h1 {
-  background-color: $pastel-pink;
+  background-color: $off-black;
+  color: $white;
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 3px 3px 0 0;
@@ -32,6 +33,10 @@ h1 {
 h3 {
   font-size: .8em;
   margin: 5px 5px 5px 0;
+}
+
+a {
+  color: $deep-pink;
 }
 
 .item-label {
@@ -44,4 +49,11 @@ h3 {
       font-size: 1em;
     }
   }
+}
+
+.older {
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 5px;
+  margin-left: 10px;
 }

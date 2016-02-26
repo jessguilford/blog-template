@@ -17,11 +17,12 @@ body {
 .header {
   text-align: center; }
 
-h1, h2, h3, h4, h5, h6, footer {
+h1, h2, h3, h4, h5, h6, footer, .older {
   font-family: 'lane_-_narrowregular'; }
 
 h1 {
-  background-color: #ffbcb7;
+  background-color: #1a1919;
+  color: #fff;
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 3px 3px 0 0; }
@@ -29,6 +30,9 @@ h1 {
 h3 {
   font-size: .8em;
   margin: 5px 5px 5px 0; }
+
+a {
+  color: #fe6357; }
 
 .item-label p {
   font-size: .9em; }
@@ -38,6 +42,12 @@ h3 {
   @media screen and (min-width: 1060px) {
     .item-label p {
       font-size: 1em; } }
+
+.older {
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 5px;
+  margin-left: 10px; }
 
 *:not(body):not(html) {
   box-sizing: border-box; }
@@ -57,7 +67,7 @@ h3 {
     margin: 0 5% 0 0;
     float: left; } }
 
-.featured-post img {
+.featured-post img, .post-body img {
   width: 100%; }
 
 .date {
@@ -121,16 +131,22 @@ footer {
   width: 90%;
   margin: 0 auto; }
 
-.featured-post {
+.featured-post, .post-body {
   border: 1px solid grey;
+  border-radius: 3px 3px 0 0;
   padding: 10px;
   margin-bottom: 20px; }
+  .featured-post a, .post-body a {
+    display: block;
+    margin: 5px 0; }
+
+.posts-gallery {
+  background-color: #eee; }
 
 .gallery-item {
   position: relative; }
   .gallery-item .item-label {
     position: absolute;
-    bottom: 0;
     top: 0;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px; }
@@ -139,12 +155,35 @@ footer {
   @media screen and (min-width: 1060px) {
     .gallery-item:hover .item-label {
       opacity: 1;
-      height: 100%;
+      top: 0;
+      bottom: 0;
       -webkit-transition: all 0.35s ease-in-out;
       -moz-transition: all 0.35s ease-in-out;
       -o-transition: all 0.35s ease-in-out;
       transition: all 0.35s ease-in-out; }
     .gallery-item .item-label {
       opacity: 0; } }
+
+.post-body {
+  border: 0; }
+
+.comments {
+  border: 1px solid grey;
+  padding: 10px; }
+  .comments h1 {
+    color: #fe6357; }
+  .comments .comment .commenter-pic {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffbcb7; }
+    .comments .comment .commenter-pic img {
+      width: 50px; }
+  .comments .comment .comment-text {
+    padding: 5px; }
+  .comments .comment::after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,17 +2,26 @@
 
 .featured-post {
   border: 1px solid grey;
+  border-radius: 3px 3px 0 0;
   padding: 10px;
   margin-bottom: 20px;
+  a {
+    display: block;
+    margin: 5px 0;
+  }
 }
 
 // Posts Gallery
+
+.posts-gallery {
+  background-color: #eee;
+}
+
 
 .gallery-item {
   position: relative;
   .item-label {
     position: absolute;
-    bottom: 0;
     top: 0;
     @include transparency(255, 255, 255, 0.7);
     padding: 20px;
@@ -24,7 +33,8 @@
     &:hover {
       .item-label {
         opacity: 1;
-        height: 100%;
+        top: 0;
+        bottom: 0;
         -webkit-transition: all 0.35s ease-in-out;
         -moz-transition: all 0.35s ease-in-out;
         -o-transition: all 0.35s ease-in-out;
