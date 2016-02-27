@@ -2,7 +2,7 @@
 
 .featured-post {
   border: 1px solid grey;
-  border-radius: 3px 3px 0 0;
+  @include border-top-radius(5px);
   padding: 10px;
   margin-bottom: 20px;
   a {
@@ -15,6 +15,11 @@
 
 .posts-gallery {
   background-color: #eee;
+  &::after {
+    @include clearfix;
+  }
+  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 
@@ -23,7 +28,7 @@
   .item-label {
     position: absolute;
     top: 0;
-    @include transparency(255, 255, 255, 0.7);
+    @include transparency(#fff, 0.7);
     padding: 20px;
     .long-text {
       display: none;

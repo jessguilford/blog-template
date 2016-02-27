@@ -25,14 +25,22 @@ h1 {
   color: #fff;
   padding: 10px;
   margin-bottom: 5px;
-  border-radius: 3px 3px 0 0; }
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+h2 {
+  margin: 15px 0;
+  padding-left: 0; }
 
 h3 {
   font-size: .8em;
   margin: 5px 5px 5px 0; }
 
 .archive h3, .categories h3 {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  margin: 0 0 15px 0;
+  padding: 10px;
+  background-color: #ffbcb7; }
 
 h4 {
   font-size: 1.1em;
@@ -55,11 +63,20 @@ a {
   font-weight: bold;
   border: 1px solid black;
   padding: 5px;
-  margin-left: 10px; }
+  margin: 10px; }
 
 .month {
   color: #fe6357;
   margin: 3px 0; }
+
+.month-posts {
+  font-style: italic; }
+  .month-posts li {
+    padding: 5px; }
+  .month-posts li:nth-child(odd) {
+    background-color: #ffebe9; }
+  .month-posts li:nth-child(even) {
+    background-color: #ffdedb; }
 
 *:not(body):not(html) {
   box-sizing: border-box; }
@@ -138,8 +155,22 @@ a {
 .sidebar ul li {
   list-style: none; }
 
-.archive .months {
-  display: none; }
+.categories .category-items {
+  width: 230px;
+  margin: 10px; }
+  .categories .category-items img {
+    border: 1px solid grey;
+    width: 70px; }
+
+.archive {
+  margin-bottom: 20px; }
+  .archive .months {
+    display: none;
+    margin-top: 0; }
+
+.widget {
+  border: 1px solid grey;
+  padding: 50px 10px; }
 
 footer {
   text-align: center;
@@ -148,7 +179,8 @@ footer {
 
 .featured-post, .post-body {
   border: 1px solid grey;
-  border-radius: 3px 3px 0 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   padding: 10px;
   margin-bottom: 20px; }
   .featured-post a, .post-body a {
@@ -156,7 +188,13 @@ footer {
     margin: 5px 0; }
 
 .posts-gallery {
-  background-color: #eee; }
+  background-color: #eee;
+  padding-bottom: 30px;
+  margin-bottom: 20px; }
+  .posts-gallery::after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .gallery-item {
   position: relative; }

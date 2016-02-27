@@ -5,6 +5,6 @@
   clear: both;
 }
 
-@mixin transparency($r, $g, $b, $opacity) {
-  background-color: rgba($r, $g, $b, $opacity);
+@mixin transparency($color, $opacity) {
+  background-color: rgba($color, $opacity);
 }

@@ -21,8 +21,26 @@
   }
 }
 
+.categories {
+  .category-items {
+    width: 230px;
+    margin: 10px;
+    img {
+      border: 1px solid grey;
+      width: 70px;
+    }
+  }
+}
+
 .archive {
+  margin-bottom: 20px;
   .months {
     display: none;
+    margin-top: 0;
   }
+}
+
+.widget {
+  border: 1px solid grey;
+  padding: 50px 10px;
 }
