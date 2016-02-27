@@ -23,11 +23,16 @@
 
 .categories {
   .category-items {
-    width: 230px;
-    margin: 10px;
-    img {
-      border: 1px solid grey;
-      width: 70px;
+    width: 75%;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $medium-breakpoint) {
+    .category-items {
+      img {
+        width: 23.33%;
+        margin: 2%;
+        max-width: 55px;
+      }
     }
   }
 }
@@ -43,4 +48,15 @@
 .widget {
   border: 1px solid grey;
   padding: 50px 10px;
+  margin-bottom: 50px;
+  @media screen and (min-width: $medium-breakpoint)
+    and (max-width: $large-breakpoint) {
+      display: none;
+    }
+}
+
+.other-info {
+  p {
+    color: grey;
+  }
 }

@@ -34,6 +34,13 @@
       display: none;
     }
   }
+  @media screen and (min-width: $medium-breakpoint) {
+    .item-label {
+      opacity: 1;
+      top: 0;
+      bottom: 0;
+    }
+  }
   @media screen and (min-width: $large-breakpoint) {
     &:hover {
       .item-label {
