@@ -1,0 +1,29 @@
+.post-body {
+  @extend .featured-post;
+  border: 0;
+}
+
+.comments {
+  border: 1px solid grey;
+  padding: 10px;
+  h1 {
+    color: $deep-pink;
+  }
+  .comment {
+    .commenter-pic {
+      float: left;
+      margin: 10px;
+      padding: 10px;
+      background-color: $pastel-pink;
+      img {
+        width: 50px;
+      }
+    }
+    .comment-text {
+      padding: 5px;
+    }
+    &::after {
+      @include clearfix;
+    }
+  }
+}

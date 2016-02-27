@@ -1,0 +1,62 @@
+.sidebar {
+  h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .profile-pic {
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  @media screen and (min-width: $medium-breakpoint) {
+    width: 25%;
+    float: right;
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.categories {
+  .category-items {
+    width: 75%;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $medium-breakpoint) {
+    .category-items {
+      img {
+        width: 23.33%;
+        margin: 2%;
+        max-width: 55px;
+      }
+    }
+  }
+}
+
+.archive {
+  margin-bottom: 20px;
+  .months {
+    display: none;
+    margin-top: 0;
+  }
+}
+
+.widget {
+  border: 1px solid grey;
+  padding: 50px 10px;
+  margin-bottom: 50px;
+  @media screen and (min-width: $medium-breakpoint)
+    and (max-width: $large-breakpoint) {
+      display: none;
+    }
+}
+
+.other-info {
+  p {
+    color: grey;
+  }
+}

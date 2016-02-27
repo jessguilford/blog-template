@@ -1,0 +1,58 @@
+// Wireframing
+*:not(body):not(html) {
+  box-sizing: border-box;
+  //border: 1px solid grey;
+}
+
+// Body columns
+.container {
+  width: 90%;
+  max-width: 1350px;
+  margin: 4% auto;
+  &::after {
+    @include clearfix;
+  }
+}
+
+.blog-main {
+  @media screen and (min-width: $medium-breakpoint) {
+    width: 70%;
+    margin: 0 5% 0 0;
+    float: left;
+  }
+}
+
+// Featured post
+.featured-post {
+  img {
+    width: 100%;
+  }
+}
+
+.date {
+  float: left;
+}
+
+.post-category {
+  float: right;
+}
+
+// Post Gallery
+.posts-gallery {
+  .gallery-col {
+    .gallery-item {
+      margin: $item-margin 0;
+      img {
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: $medium-breakpoint) {
+      width: 48%;
+      margin: 1%;
+      float: left;
+    }
+  }
+  &::after {
+    @include clearfix;
+  }
+}

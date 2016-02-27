@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+
+// Bourbon
+
+@import 'bourbon/bourbon';
+
+// Mixins, variables, and functions
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins';
+
+// Base styles
+@import
+  'base/base',
+  'base/typography';
+
+// Layout sections
+@import
+  'layout/columns',
+  'layout/header',
+  'layout/sidebar',
+  'layout/footer';
+
+// Components
+@import
+  'components/comments',
+  'components/button';
+
+// Page-specific styles
+@import
+  'pages/main-page',
+  'pages/blog-post';
